@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - La Terraza del Acuario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-fish text-blue-600 text-3xl"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold text-blue-900">La Terraza del Acuario</h1>
+                </div>
+                <a href="index.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Volver al Inicio
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-sky-400 to-sky-600 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <i class="fas fa-wine-glass text-5xl mb-4"></i>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Vinos y Bebidas</h2>
+            <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto">
+                Selección de vinos y bebidas para acompañar tu comida
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+
+            <!-- Vinos Blancos Section -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Vinos Blancos</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-yellow-200 to-yellow-300 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Albariño</h3>
+                                <span class="text-2xl font-bold text-blue-600">18€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Rías Baixas - Fresco y afrutado</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Verdejo</h3>
+                                <span class="text-2xl font-bold text-blue-600">16€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Rueda - Aromático y equilibrado</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-lime-200 to-lime-300 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Chardonnay</h3>
+                                <span class="text-2xl font-bold text-blue-600">20€</span>
+                            </div>
+                            <p class="text-gray-600">Con crianza en barrica - Complejo y elegante</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Vinos Tintos Section -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Vinos Tintos</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-red-300 to-red-400 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Rioja Crianza</h3>
+                                <span class="text-2xl font-bold text-blue-600">19€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Rioja - Equilibrado y suave</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-rose-300 to-rose-400 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Ribera del Duero</h3>
+                                <span class="text-2xl font-bold text-blue-600">22€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Ribera del Duero - Potente y estructurado</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-pink-300 to-pink-400 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Priorat</h3>
+                                <span class="text-2xl font-bold text-blue-600">28€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Priorat - Intenso y mineral</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Rosados Section -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Vinos Rosados</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-pink-200 to-pink-300 flex items-center justify-center">
+                            <i class="fas fa-wine-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Rosado de Navarra</h3>
+                                <span class="text-2xl font-bold text-blue-600">15€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Navarra - Fresco y afrutado</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bebidas Section -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Bebidas</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
+                            <i class="fas fa-beer text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Cerveza Nacional</h3>
+                                <span class="text-2xl font-bold text-blue-600">3€</span>
+                            </div>
+                            <p class="text-gray-600">Caña / Botella - Fría y refrescante</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-cyan-200 to-cyan-300 flex items-center justify-center">
+                            <i class="fas fa-glass-water text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Agua Mineral</h3>
+                                <span class="text-2xl font-bold text-blue-600">2.5€</span>
+                            </div>
+                            <p class="text-gray-600">Con gas o sin gas - 500ml</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-orange-200 to-orange-300 flex items-center justify-center">
+                            <i class="fas fa-glass-whiskey text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Refrescos</h3>
+                                <span class="text-2xl font-bold text-blue-600">3€</span>
+                            </div>
+                            <p class="text-gray-600">Coca-Cola, Fanta, Sprite, Nestea</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-yellow-200 to-yellow-300 flex items-center justify-center">
+                            <i class="fas fa-lemon text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Zumo Natural</h3>
+                                <span class="text-2xl font-bold text-blue-600">4€</span>
+                            </div>
+                            <p class="text-gray-600">Naranja natural recién exprimida</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center">
+                            <i class="fas fa-martini-glass text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Sangría</h3>
+                                <span class="text-2xl font-bold text-blue-600">15€</span>
+                            </div>
+                            <p class="text-gray-600">Jarra 1L - Sangría casera con frutas</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-purple-200 to-purple-300 flex items-center justify-center">
+                            <i class="fas fa-champagne-glasses text-6xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-900">Cava</h3>
+                                <span class="text-2xl font-bold text-blue-600">22€</span>
+                            </div>
+                            <p class="text-gray-600">D.O. Cava - Brut Nature o Brut</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Note -->
+            <div class="text-center mt-12 max-w-2xl mx-auto">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <p class="text-gray-700 mb-2">
+                        <i class="fas fa-info-circle text-blue-600 mr-2"></i>
+                        Consulta nuestra carta completa de vinos para más opciones
+                    </p>
+                    <p class="text-gray-600 text-sm italic">
+                        * Los precios de vinos pueden variar según añada y disponibilidad
+                    </p>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center mt-12">
+                <a href="index.html" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Volver al Menú Principal
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">La Terraza del Acuario - Plaza Kuwait, Almuñécar, Granada</p>
+            <p class="text-blue-300">Reservas: +34 XXX XXX XXX</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

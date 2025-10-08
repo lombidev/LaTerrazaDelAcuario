@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Terraza del Acuario - Almuñécar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-fish text-blue-600 text-3xl wave"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold text-blue-900">La Terraza del Acuario</h1>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#inicio" class="text-blue-800 hover:text-blue-600 transition" data-i18n="nav.home">Inicio</a>
+                        <a href="#menu" class="text-blue-800 hover:text-blue-600 transition" data-i18n="nav.menu">Menú</a>
+                        <a href="#ubicacion" class="text-blue-800 hover:text-blue-600 transition" data-i18n="nav.location">Ubicación</a>
+                        <a href="#contacto" class="text-blue-800 hover:text-blue-600 transition" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-gradient-to-r from-blue-400 to-blue-600 text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6" data-i18n="hero.title">Sabores del Mediterráneo</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light" data-i18n="hero.subtitle">
+                Descubre la frescura del mar en cada plato, en el corazón de Almuñécar
+            </p>
+            <div class="flex justify-center space-x-4 text-sm md:text-base">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-fish"></i>
+                    <span data-i18n="hero.feature1">Pescado Fresco</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-i18n="hero.feature2">Plaza Kuwait</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-star"></i>
+                    <span data-i18n="hero.feature3">Calidad Premium</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6" data-i18n="about.title">Experiencia Gastronómica Única</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4" data-i18n="about.text1">
+                    En La Terraza del Acuario, nos especializamos en traer lo mejor del mar a tu mesa.
+                    Ubicados en la hermosa Plaza Kuwait de Almuñécar, Granada, ofrecemos una experiencia
+                    culinaria inolvidable con vistas espectaculares y los mariscos más frescos de la costa.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text2">
+                    Cada plato es una celebración de la tradición mediterránea, preparado con ingredientes
+                    de la más alta calidad y el cariño de nuestra cocina familiar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-blue-900 text-center mb-4" data-i18n="menu.title">Nuestro Menú</h2>
+            <p class="text-center text-gray-600 mb-12" data-i18n="menu.subtitle">Haz clic en cada categoría para ver el menú completo</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Menu Card 1: Entrantes -->
+                <a href="entrantes.html" class="menu-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer block">
+                    <div class="h-48 bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center">
+                        <i class="fas fa-utensils text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2" data-i18n="menu.starters.title">Entrantes</h3>
+                        <p class="text-gray-600 mb-4" data-i18n="menu.starters.desc">Gambas al ajillo, boquerones, croquetas y más</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold" data-i18n="menu.viewMenu">Ver Menú →</span>
+                            <i class="fas fa-arrow-right text-blue-600"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Menu Card 2: Pescados -->
+                <a href="pescados.html" class="menu-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer block">
+                    <div class="h-48 bg-gradient-to-br from-cyan-200 to-cyan-400 flex items-center justify-center">
+                        <i class="fas fa-fish text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2" data-i18n="menu.fish.title">Pescados</h3>
+                        <p class="text-gray-600 mb-4" data-i18n="menu.fish.desc">Dorada, lubina, merluza y más variedades frescas</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold" data-i18n="menu.viewMenu">Ver Menú →</span>
+                            <i class="fas fa-arrow-right text-blue-600"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Menu Card 3: Carnes -->
+                <a href="carnes.html" class="menu-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer block">
+                    <div class="h-48 bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-drumstick-bite text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2" data-i18n="menu.meats.title">Carnes</h3>
+                        <p class="text-gray-600 mb-4" data-i18n="menu.meats.desc">Solomillo, entrecot, secreto ibérico y más</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold" data-i18n="menu.viewMenu">Ver Menú →</span>
+                            <i class="fas fa-arrow-right text-blue-600"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Menu Card 4: Bebidas -->
+                <a href="bebidas.html" class="menu-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer block">
+                    <div class="h-48 bg-gradient-to-br from-sky-200 to-sky-400 flex items-center justify-center">
+                        <i class="fas fa-wine-glass text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2" data-i18n="menu.drinks.title">Vinos y Bebidas</h3>
+                        <p class="text-gray-600 mb-4" data-i18n="menu.drinks.desc">Selección de vinos blancos, tintos y bebidas</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold" data-i18n="menu.viewMenu">Ver Menú →</span>
+                            <i class="fas fa-arrow-right text-blue-600"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 italic" data-i18n="menu.note">* Precios orientativos. Consulta disponibilidad según temporada</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-blue-900 text-center mb-12" data-i18n="location.title">Encuéntranos</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div>
+                    <div class="bg-blue-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6" data-i18n="location.contact">Información de Contacto</h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-800" data-i18n="location.address">Dirección</p>
+                                    <p class="text-gray-600">Plaza Kuwait<br>Almuñécar, Granada<br>España</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-clock text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-800" data-i18n="location.hours">Horario</p>
+                                    <p class="text-gray-600" data-i18n="location.schedule">Lunes - Domingo<br>12:00 - 16:00 / 19:00 - 23:00</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-phone text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-800" data-i18n="location.phone">Teléfono</p>
+                                    <p class="text-gray-600"><span data-i18n="location.reservations">Reservas:</span> +34 XXX XXX XXX</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Plaza+Kuwait+Almuñecar+Granada+Spain"
+                               target="_blank"
+                               class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                                <i class="fas fa-directions mr-2"></i>
+                                <span data-i18n="location.directions">Cómo Llegar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="h-full min-h-[400px] bg-blue-100 rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3188.8!2d-3.69!3d36.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQzJzQ4LjAiTiAzwrA0MScyNC4wIlc!5e0!3m2!1ses!2ses!4v1234567890"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">La Terraza del Acuario</h3>
+                    <p class="text-blue-200" data-i18n="footer.tagline">Tu restaurante de confianza en Almuñécar</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="footer.followUs">Síguenos</h3>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="text-2xl hover:text-blue-300 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300 transition"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="footer.reservations">Reservas</h3>
+                    <p class="text-blue-200" data-i18n="footer.callUs">Llámanos para reservar tu mesa</p>
+                    <p class="text-xl font-semibold mt-2">+34 XXX XXX XXX</p>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p data-i18n="footer.copyright">&copy; 2025 La Terraza del Acuario. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+
+</body>
+</html>
