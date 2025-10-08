@@ -4,8 +4,7 @@ const translations = {
         nav: {
             home: 'Inicio',
             menu: 'Menú',
-            location: 'Ubicación',
-            contact: 'Contacto'
+            location: 'Ubicación'
         },
         hero: {
             title: 'Sabores del Mediterráneo',
@@ -43,7 +42,7 @@ const translations = {
         },
         location: {
             title: 'Encuéntranos',
-            contact: 'Información de Contacto',
+            info: 'Información',
             address: 'Dirección',
             hours: 'Horario',
             schedule: 'Lunes - Domingo<br>12:00 - 16:00 / 19:00 - 23:00',
@@ -63,8 +62,7 @@ const translations = {
         nav: {
             home: 'Home',
             menu: 'Menu',
-            location: 'Location',
-            contact: 'Contact'
+            location: 'Location'
         },
         hero: {
             title: 'Mediterranean Flavors',
@@ -102,7 +100,7 @@ const translations = {
         },
         location: {
             title: 'Find Us',
-            contact: 'Contact Information',
+            info: 'Information',
             address: 'Address',
             hours: 'Hours',
             schedule: 'Monday - Sunday<br>12:00 PM - 4:00 PM / 7:00 PM - 11:00 PM',
